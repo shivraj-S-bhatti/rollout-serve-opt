@@ -1,0 +1,14 @@
+name: disaggregated_pd
+description: Rung-2 disaggregated prefill (4 GPUs) and decode (4 GPUs) pools with prefix-aware routing and L2 RAM offload
+mode: disaggregated
+routing_policy: prefix_aware
+num_gpus: 8
+prefill_gpus: 4
+decode_gpus: 4
+pool_allocation: {}
+max_num_seqs: 64
+max_num_batched_tokens: 4096
+chunked_prefill_tokens: 4096
+prefix_caching: true
+l2_ram_offload: true
+prefix_weight: 0.65

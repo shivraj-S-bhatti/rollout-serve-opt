@@ -1,0 +1,17 @@
+name: workload_shaped_pools
+description: Dedicated workload pools (context_reuse=3, low_latency=3, batch_throughput=2) testing specialization vs fragmentation
+mode: workload_shaped
+routing_policy: prefix_aware
+num_gpus: 8
+prefill_gpus: 0
+decode_gpus: 0
+pool_allocation:
+  context_reuse: 3
+  low_latency: 3
+  batch_throughput: 2
+max_num_seqs: 64
+max_num_batched_tokens: 4096
+chunked_prefill_tokens: 2048
+prefix_caching: true
+l2_ram_offload: true
+prefix_weight: 0.65

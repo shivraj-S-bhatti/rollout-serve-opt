@@ -1,0 +1,23 @@
+# Portfolio visibility split
+.portfolio/*
+!.portfolio/publish/
+
+# Python / Packaging
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local artifacts & traces
+.artifacts/
+*.jsonl
+*.db
+.DS_Store

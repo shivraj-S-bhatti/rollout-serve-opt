@@ -1,0 +1,14 @@
+name: monolithic_rr
+description: Baseline monolithic workers with round-robin routing, no prefix cache, unchunked prefill
+mode: monolithic
+routing_policy: round_robin
+num_gpus: 8
+prefill_gpus: 0
+decode_gpus: 0
+pool_allocation: {}
+max_num_seqs: 64
+max_num_batched_tokens: 16384
+chunked_prefill_tokens: 0
+prefix_caching: false
+l2_ram_offload: false
+prefix_weight: 0.0
